@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { SEO } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/ai-avatar-hero.jpg";
 import { useRef } from "react";
@@ -20,20 +20,17 @@ const Index = () => {
 
   return (
     <div ref={containerRef} onMouseMove={onMouseMove} className="min-h-screen relative overflow-hidden bg-background">
-      <Helmet>
-        <title>{title}</title>
-        <meta name="description" content={description} />
-        <link rel="canonical" href={typeof window !== 'undefined' ? window.location.href : '/'} />
-        <meta property="og:title" content={title} />
-        <meta property="og:description" content={description} />
-        <script type="application/ld+json">{JSON.stringify({
+      <SEO
+        title={title}
+        description={description}
+        jsonLd={{
           "@context": "https://schema.org",
           "@type": "Service",
           name: "Hire Your AI Avatar",
           description,
           provider: { "@type": "Person", name: "Your AI Persona" }
-        })}</script>
-      </Helmet>
+        }}
+      />
 
       {/* Pointer-reactive glow */}
       <div
