@@ -5,6 +5,7 @@ import { AvatarDemo } from "@/components/AvatarDemo";
 import { TestimonialCard } from "@/components/TestimonialCard";
 import { PricingCard } from "@/components/PricingCard";
 import { StatsSection } from "@/components/StatsSection";
+import { Navbar } from "@/components/Navbar";
 import heroImage from "@/assets/ai-avatar-hero.jpg";
 import { useRef } from "react";
 import { Bot, ShieldCheck, CalendarCheck2, Users, Zap, Globe, ArrowRight } from "lucide-react";
@@ -46,17 +47,7 @@ const Index = () => {
         }}
       />
 
-      <header className="container py-8">
-        <nav className="flex items-center justify-between">
-          <a href="#" className="text-lg font-semibold bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent">AI Avatar</a>
-          <div className="hidden md:flex items-center gap-6 text-sm text-muted-foreground">
-            <a href="#features" className="hover:text-foreground transition-colors">Features</a>
-            <a href="#demo" className="hover:text-foreground transition-colors">Demo</a>
-            <a href="#pricing" className="hover:text-foreground transition-colors">Pricing</a>
-            <a href="#testimonials" className="hover:text-foreground transition-colors">Reviews</a>
-          </div>
-        </nav>
-      </header>
+      <Navbar />
 
       <main>
         {/* Hero */}
