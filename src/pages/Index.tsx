@@ -5,7 +5,7 @@ import { AvatarDemo } from "@/components/AvatarDemo";
 import { TestimonialCard } from "@/components/TestimonialCard";
 import { PricingCard } from "@/components/PricingCard";
 import { StatsSection } from "@/components/StatsSection";
-import { Navbar } from "@/components/Navbar";
+
 import heroImage from "@/assets/ai-avatar-hero.jpg";
 import { useRef } from "react";
 import { Bot, ShieldCheck, CalendarCheck2, Users, Zap, Globe, ArrowRight } from "lucide-react";
@@ -47,7 +47,7 @@ const Index = () => {
         }}
       />
 
-      <Navbar />
+      
 
       <main>
         {/* Hero */}
