@@ -1,73 +1,196 @@
-# Welcome to your Lovable project
+# AI Avatar Landing Page
 
-## Project info
+> **Transform your professional presence with hireable AI avatars that attend meetings, execute tasks, and deliver results in your voice and style.**
 
-**URL**: https://lovable.dev/projects/59024c91-f35b-403c-948f-0bf7785a0e1e
+## ✨ About This Project
 
-## How can I edit this code?
+This is a modern, responsive landing page for an AI Avatar service built with cutting-edge web technologies. The application showcases a futuristic platform where professionals can create AI-powered digital twins of themselves to handle meetings, tasks, and client interactions.
 
-There are several ways of editing your application.
+### 🎯 Key Features
 
-**Use Lovable**
+- **Interactive Hero Section** with dynamic mouse-tracking glow effects
+- **Live Demo Component** showcasing AI avatar capabilities
+- **Responsive Navigation** with mobile-friendly hamburger menu
+- **Statistics Dashboard** displaying platform metrics
+- **Customer Testimonials** with star ratings
+- **Pricing Plans** with feature comparison
+- **Smooth Animations** and modern UI transitions
+- **SEO Optimized** with structured data and meta tags
+- **Dark/Light Theme Support** with semantic design tokens
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/59024c91-f35b-403c-948f-0bf7785a0e1e) and start prompting.
+## 🛠️ Technology Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Framework**: React 18 with TypeScript
+- **Build Tool**: Vite for fast development and optimized builds
+- **Styling**: Tailwind CSS with custom design system
+- **UI Components**: Shadcn/ui component library
+- **Icons**: Lucide React icon library
+- **Routing**: React Router DOM
+- **State Management**: TanStack Query for server state
+- **Animation**: CSS transitions and transforms
 
-**Use your preferred IDE**
+## 🎨 Design System
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+The project features a cohesive design system with:
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- **Color Palette**: Neon violet primary (`265 84% 56%`) with cyan accent (`198 93% 60%`)
+- **Typography**: Plus Jakarta Sans font family
+- **Spacing**: Consistent Tailwind spacing scale
+- **Components**: Reusable UI components with variants
+- **Dark Mode**: Automatic theme switching support
 
-Follow these steps:
+## 📁 Project Structure
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```
+src/
+├── components/
+│   ├── ui/                 # Shadcn/ui base components
+│   ├── AvatarDemo.tsx      # Interactive demo component
+│   ├── Navbar.tsx          # Navigation with mobile menu
+│   ├── PricingCard.tsx     # Pricing plan cards
+│   ├── StatsSection.tsx    # Platform statistics
+│   ├── TestimonialCard.tsx # Customer review cards
+│   └── SEO.tsx            # SEO meta tags component
+├── pages/
+│   ├── Index.tsx          # Main landing page
+│   └── NotFound.tsx       # 404 error page
+├── assets/
+│   └── ai-avatar-hero.jpg # Hero section image
+├── hooks/                 # Custom React hooks
+├── lib/                   # Utility functions
+└── index.css             # Global styles and design tokens
 ```
 
-**Edit a file directly in GitHub**
+## 🚀 Getting Started
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Prerequisites
 
-**Use GitHub Codespaces**
+- **Node.js** (v18 or higher)
+- **npm** or **yarn** package manager
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Installation
 
-## What technologies are used for this project?
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd ai-avatar-landing
+   ```
 
-This project is built with:
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+3. **Start development server**
+   ```bash
+   npm run dev
+   ```
 
-## How can I deploy this project?
+4. **Open in browser**
+   ```
+   http://localhost:8080
+   ```
 
-Simply open [Lovable](https://lovable.dev/projects/59024c91-f35b-403c-948f-0bf7785a0e1e) and click on Share -> Publish.
+### Build for Production
 
-## Can I connect a custom domain to my Lovable project?
+```bash
+npm run build
+```
 
-Yes, you can!
+The built files will be in the `dist/` directory.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 🎯 Key Components
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+### AvatarDemo
+Interactive demo showcasing AI avatar capabilities with video controls and simulated conversation.
+
+### Navbar
+Responsive navigation with:
+- Desktop menu with smooth hover effects
+- Mobile hamburger menu
+- Sticky positioning
+- Link highlighting
+
+### PricingCard
+Flexible pricing component supporting:
+- Multiple pricing tiers
+- Feature lists
+- Popular plan highlighting
+- Custom CTA buttons
+
+### SEO Component
+Comprehensive SEO optimization with:
+- Dynamic meta tags
+- JSON-LD structured data
+- Social media optimization
+- Accessibility features
+
+## 🎨 Customization
+
+### Colors
+Update the design system in `src/index.css`:
+
+```css
+:root {
+  --primary: 265 84% 56%;    /* Main brand color */
+  --accent: 198 93% 60%;     /* Accent color */
+  --background: 0 0% 100%;   /* Background color */
+  /* ... more color tokens */
+}
+```
+
+### Typography
+Font family is defined in `src/index.css` and can be customized:
+
+```css
+body {
+  font-family: "Plus Jakarta Sans", ui-sans-serif, system-ui, ...;
+}
+```
+
+### Components
+All UI components are located in `src/components/ui/` and can be customized using the class variance authority (CVA) pattern.
+
+## 📱 Responsive Design
+
+The application is fully responsive with breakpoints for:
+- **Mobile**: < 768px
+- **Tablet**: 768px - 1024px  
+- **Desktop**: > 1024px
+
+## ♿ Accessibility
+
+- Semantic HTML structure
+- ARIA labels and roles
+- Keyboard navigation support
+- Screen reader compatibility
+- High contrast color ratios
+
+## 🔧 Development Scripts
+
+```bash
+npm run dev          # Start development server
+npm run build        # Build for production
+npm run preview      # Preview production build
+npm run lint         # Run ESLint
+```
+
+## 📄 License
+
+This project is part of the Lovable platform. For more information, visit [Lovable.dev](https://lovable.dev).
+
+## 🔗 Deployment
+
+### Lovable Platform
+Deploy directly through the Lovable interface by clicking the "Publish" button.
+
+### Manual Deployment
+The built application can be deployed to any static hosting service like:
+- Vercel
+- Netlify
+- AWS S3
+- GitHub Pages
+
+---
+
+**Built with ❤️ using Lovable** - The future of web development is here.
